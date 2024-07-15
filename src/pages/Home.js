@@ -1,10 +1,14 @@
 import Nav from '../components/Nav'
+import {useState}  from 'react'
+import AuthModal from "../components/AuthModal"
 const Home = () => {
-
+     
+    const [showModal , setShowModal] = useState(false);
     const authToken = true
 
     const handleClick = () => {
         console.log('Clicked')
+        setShowModal(true)
     }
     return (
         <>
@@ -14,6 +18,10 @@ const Home = () => {
         <button className="primary-button" onClick={handleClick}>
             {authToken ? 'SignOut':"create account"}
         </button>
+
+        {showModal && (
+            <AuthModal setShowModal={setShowModal}/>
+        )}
         </div>
 
         </>
