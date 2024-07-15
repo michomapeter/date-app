@@ -8,7 +8,7 @@ const Nav= ({minimal ,authToken}) => {
         <div className="logo-container"> 
          <img className='logo' src={minimal ? colorLogo : logo}/>
         </div>
-        {authToken && <button>Login</button>}
+        {authToken && <button className="nav-button">Login</button>}
        </nav> 
     )
 }
