@@ -7,12 +7,16 @@ const Home = () => {
         console.log('Clicked')
     }
     return (
+        <>
+        <Nav minimal={false}  authToken={authToken}/>
         <div className="home">
         <h1>Swipe Right</h1>
         <button className="primary-button" onClick={handleClick}>
             {authToken ? 'SignOut':"create account"}
         </button>
         </div>
+
+        </>
     )
 }
 
