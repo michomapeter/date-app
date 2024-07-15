@@ -1,11 +1,17 @@
-
-import './App.css';
+import Home from './pages/Home'
+import OnBoarding from './pages/Onboarding';
+import Dashboard from './pages/Dashboard';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-     <h1>Learning React</h1>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path={"/"} element={<Home/>}/>
+      <Route path={"/dashboard"} element={<Dashboard/>}/>
+      <Route path={"/onboarding"} element={<OnBoarding/>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
