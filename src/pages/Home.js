@@ -1,3 +1,4 @@
+import Nav from '../components/Nav'
 const Home = () => {
 
     const authToken = true
@@ -15,4 +16,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Home; 
