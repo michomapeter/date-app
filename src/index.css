@@ -50,3 +50,23 @@ nav .logo-container .logo {
   background-color: rgb(255,255,255);
   color: rgb(254 ,48 ,114);
 }
+
+/* .auth-modal {
+
+  top: 175px;
+  max-width: 360px;
+  height: 600px;
+  background-color:grey;
+  border-radius: 10px;
+  
+} */
+
+.auth-modal {
+  background-color: grey;
+  width: 35%;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

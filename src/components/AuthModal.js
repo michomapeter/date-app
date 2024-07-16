@@ -1,12 +1,13 @@
 const AuthModal = ({setShowModal}) =>{
 
     const handleClick =() =>{
-        setShowModal(true)
+        setShowModal(false)
     }
 
     return(
-        <div>
-         <div onclick={handleClick}>X</div>
+        <div className="auth-modal"> 
+         <div onClick={handleClick}>X</div>
+         AUTH MODAL
         </div>
     )
 }
