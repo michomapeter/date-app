@@ -1,14 +1,20 @@
 import logo from '../images/tinder.png'
 import colorLogo from '../images/color.jpeg'
 // import Home from '../pages/Home';
+
+
 const minimal = true;
-const Nav= ({minimal ,authToken}) => {
+const Nav= ({minimal ,authToken ,setShowModal}) => {
+
+    const handleClick =()=>{
+        setShowModal(true);
+    }
     return (
        <nav>
         <div className="logo-container"> 
          <img className='logo' src={minimal ? colorLogo : logo}/>
         </div>
-        {authToken && <button className="nav-button">Login</button>}
+        {authToken && <button className="nav-button" onClick={handleClick}>Login</button>}
        </nav> 
     )
 }
