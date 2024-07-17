@@ -12,7 +12,7 @@ const Home = () => {
         setShowModal(true)
     }
     return (
-        <>
+        <div className='overlay'>
         <Nav minimal={false}  authToken={authToken}/>
         <div className="home">
         <h1>Swipe Right</h1>
@@ -25,7 +25,7 @@ const Home = () => {
         )}
         </div>
 
-        </>
+        </div>
     )
 }
 
