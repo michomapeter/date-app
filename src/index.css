@@ -22,7 +22,9 @@ code {
   font-size: 15px;
   border-radius: 30px;
   padding: 12px 30px;
+  background: linear-gradient(45deg ,#fe3072 ,#ff5940);
 }
+
 .primary-button:hover {background:linear-gradient(260deg ,#fe3072 ,#ff5940);}
 
 .body{
@@ -51,22 +53,3 @@ nav .logo-container .logo {
   color: rgb(254 ,48 ,114);
 }
 
-/* .auth-modal {
-
-  top: 175px;
-  max-width: 360px;
-  height: 600px;
-  background-color:grey;
-  border-radius: 10px;
-  
-} */
-
-.auth-modal {
-  background-color: grey;
-  width: 35%;
-  height: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}

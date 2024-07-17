@@ -4,7 +4,8 @@ import AuthModal from "../components/AuthModal"
 const Home = () => {
      
     const [showModal , setShowModal] = useState(false);
-    const authToken = false
+    //An authtoken means we are signed in.
+    const authToken = true
 
     const handleClick = () => {
         console.log('Clicked')
