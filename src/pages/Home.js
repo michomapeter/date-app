@@ -23,7 +23,7 @@ const Home = () => {
         </button>
 
         {showModal && (
-            <AuthModal setShowModal={setShowModal} setIsSignUp={true}/>
+            <AuthModal setShowModal={setShowModal} setIsSignUp={true} isSignUp={isSignUp}/>
         )}
         </div>
 

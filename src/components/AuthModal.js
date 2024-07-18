@@ -1,12 +1,13 @@
 import {useState} from 'react'
 
-const AuthModal = ({setShowModal ,setIsSignUp }) =>{
+const AuthModal = ({setShowModal ,setIsSignUp ,isSignUp}) =>{
    const[email ,setEmail] = useState(null)
    const [password ,setPassword] = useState(null)
    const [confirmPassword ,setconfirmPassword] =useState(null)
    const [error ,setError] = useState(null)
 
    console.log(email ,password ,confirmPassword)
+   
     const handleClick =() =>{
         setShowModal(false)
     }
@@ -25,7 +26,7 @@ const AuthModal = ({setShowModal ,setIsSignUp }) =>{
     }
     
     
-    const isSignUp =true;
+    
 
 
     return(
