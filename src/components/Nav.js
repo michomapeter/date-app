@@ -4,10 +4,11 @@ import colorLogo from '../images/color.jpeg'
 
 
 const minimal = true;
-const Nav= ({minimal ,authToken ,setShowModal}) => {
+const Nav= ({minimal ,authToken ,setShowModal ,setIsSignUp}) => {
 
     const handleClick =()=>{
         setShowModal(true);
+        setIsSignUp(false);
     }
     return (
        <nav>

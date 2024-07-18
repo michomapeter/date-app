@@ -4,16 +4,18 @@ import AuthModal from "../components/AuthModal"
 const Home = () => {
      
     const [showModal , setShowModal] = useState(false);
+    const [isSignUp ,setIsSignUp] =useState(true);
     //An authtoken means we are signed in.
     const authToken = true
 
     const handleClick = () => {
         console.log('Clicked')
         setShowModal(true)
+        setIsSignUp(true);
     }
     return (
         <div className='overlay'>
-        <Nav minimal={false}  authToken={authToken}  setShowModal={setShowModal} />
+        <Nav minimal={false}  authToken={authToken}  setShowModal={setShowModal} setIsSignUp={setIsSignUp} />
         <div className="home">
         <h1>Swipe Right</h1>
         <button className="primary-button" onClick={handleClick}>
@@ -21,7 +23,7 @@ const Home = () => {
         </button>
 
         {showModal && (
-            <AuthModal setShowModal={setShowModal}/>
+            <AuthModal setShowModal={setShowModal} setIsSignUp={true}/>
         )}
         </div>
 
