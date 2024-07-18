@@ -39,7 +39,7 @@ const AuthModal = ({setShowModal}) =>{
           onChange={(e)=>setPassword(e.target.value)}
           />
            <input
-          type ="password-check"
+          type ="password"
           id ="password-check"
           name="password-check"
           placeholder="password-check"

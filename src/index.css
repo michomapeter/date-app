@@ -108,3 +108,15 @@ h2{
   display:flex;
   flex-direction: column;
 }
+
+.auth-modal input[type=password],
+.auth-modal input[type=email],
+auth-modal input[type=password-check]
+{
+  
+  padding: 8px;
+  margin: 8px;
+  font-size: 17px;
+
+
+}
