@@ -130,8 +130,21 @@ auth-modal input[type=password-check]
   display:flex;
   flex-direction: column;
   padding: 20px;
+  width: 35%;
 }
 .onboarding form input{
   padding: 15px 30px;
   margin: 10px 0;
+  font-size: 15px;
+  border:solid 2px rgb(219,219,219);
+  border-radius: 10px;
+}
+.onboarding form input::-webkit-outer-spin-button,
+.onboarding form input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin:0;
+}
+.onboarding form .multiple-input-container {
+  display: flex;
+  flex-direction: row;
 }

@@ -61,7 +61,15 @@ const OnBoarding = () => {
                 />
                  </div>
                 <label>Gender</label>
-                <div className="">
+                <div className="multiple-input-container">
+                <input
+               id="man-gender-identity"
+               type= "radio"
+               name ="gender_identity"
+               value="woman"
+               onChange= {handleChange}
+               checked={false}
+                />
                 
                 <label htmlFor="man-gender-identity">Man</label>
                
