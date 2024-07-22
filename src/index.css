@@ -131,6 +131,7 @@ auth-modal input[type=password-check]
   flex-direction: column;
   padding: 20px;
   width: 35%;
+  text-align: start;
 }
 .onboarding form input{
   padding: 15px 30px;
@@ -167,6 +168,9 @@ auth-modal input[type=password-check]
 .onboarding form  input[type="radio"]{
 display: none;
 }
+.onboarding form  input[type="number"]{
+  width:10%;
+  }
 
 .onboarding form  input[type="radio"] :checked + label {
   border:  solid 2px rgb(221,39,22);

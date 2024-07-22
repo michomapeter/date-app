@@ -6,12 +6,37 @@ import Nav from '../components/Nav'
 
 const OnBoarding = () => {
 
+    const [formData ,setFormData] = useState({
+        user_id:'',
+        first_name:'',
+        dob_day:'',
+        dob_month:'',
+        dob_year:'',
+        showgender:false,
+        gender_identity:'man',
+        gender_interest: 'woman',
+        email:'',
+        url:'',
+        about:'',
+        matches:[]
+    })
+
     const handleSubmit =() =>{
         console.log('submitted')
     }
-    const handleChange=() =>{
-        console.log('change')
+    const handleChange=(e) =>{
+        console.log('e' ,e)
+        const value = e.target.value
+        const name = e.target.name
+        console.log('value' +value ,'name' + name)
+
+        setFormData((prevState)=>({
+          ...prevState,
+          [name]: value
+        }))
     }
+
+    console.log(formData)
     return (
         <>
         <Nav minimal={true}  setShowModal={() =>{} } showModal={false}/>
@@ -27,7 +52,7 @@ const OnBoarding = () => {
                 name ="first_name"
                 placeholder="First Name"
                 required={true}
-                value={""}
+                value={formData.first_name}
                 onChange= {handleChange}
                 />
                    <label >Birth Day</label>
@@ -38,7 +63,7 @@ const OnBoarding = () => {
                 name ="dob_day"
                 placeholder="DD"
                 required={true}
-                value={""}
+                value={formData.dob_day}
                 onChange= {handleChange}
                 />
                   <input
@@ -47,7 +72,7 @@ const OnBoarding = () => {
                 name ="dob_month"
                 placeholder="MM"
                 required={true}
-                value={""}
+                value={formData.dob_month}
                 onChange= {handleChange}
                 />
                   <input
@@ -56,7 +81,7 @@ const OnBoarding = () => {
                 name ="dob_year"
                 placeholder="YYYY"
                 required={true}
-                value={""}
+                value={formData.dob_year}
                 onChange= {handleChange}
                 />
                  </div>
@@ -143,7 +168,7 @@ const OnBoarding = () => {
                type= "text"
                name ="about"
                required ={true}
-               value=""
+               value={formData.about}
                onChange= {handleChange}
                checked={false}
                 />
@@ -161,7 +186,7 @@ const OnBoarding = () => {
                 required={true}
                 />
                 <div className="photo-container">
-                  
+                  <img src={formData.url} alt="profil pic preview"/>
                 </div>
               </section>
             </form>
