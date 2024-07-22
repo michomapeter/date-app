@@ -8,7 +8,7 @@ const Home = () => {
     //An authtoken means we are signed in.
     const authToken = true
 
-    const handleClick = () => {
+    const handleClick = () => {   
         console.log('Clicked')
         setShowModal(true)
         setIsSignUp(true);
