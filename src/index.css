@@ -120,3 +120,18 @@ auth-modal input[type=password-check]
 
 
 }
+
+.onboarding form{
+  display: flex;
+  justify-content: center;
+}
+
+.onboarding form section{
+  display:flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.onboarding form input{
+  padding: 15px 30px;
+  margin: 10px 0;
+}
