@@ -1,13 +1,17 @@
 import {useState} from 'react'
 import Nav from '../components/Nav'
 
-const handleSubmit = (e) => {
-    e.preventDefault();
-    
-}
+
 
 
 const OnBoarding = () => {
+
+    const handleSubmit =() =>{
+        console.log('submitted')
+    }
+    const handleChange=() =>{
+        console.log('change')
+    }
     return (
         <>
         <Nav minimal={true}  setShowModal={() =>{} } showModal={false}/>
@@ -27,7 +31,7 @@ const OnBoarding = () => {
                 onChange= {handleChange}
                 />
                    <label >Birth Day</label>
-                   <div className="multiple-input">
+                   <div className="multiple-input-container">
                 <input
                 id="dob_day"
                 type= "number"
@@ -57,14 +61,43 @@ const OnBoarding = () => {
                 />
                  </div>
                 <label>Gender</label>
+                <div className="">
+                    <label htmlFor="man-gender-identity">Man</label>
                 <input
-               id="dob_year"
-               type= "number"
-               name ="dob_year"
-               placeholder="YYYY"
-               required={true}
-               value={""}
+               id="man-gender-identity"
+               type= "radio"
+               name ="gender_identity"
+               value="man"
                onChange= {handleChange}
+               checked={false}
+                />
+               <label htmlFor="woman-gender-identity">Woman</label>
+                 <input
+               id="woman-gender-identity"
+               type= "radio"
+               name ="gender_identity"
+               value="woman"
+               onChange= {handleChange}
+               checked={false}
+                />
+                <label htmlFor="more-gender-identity">More</label>
+                       <input
+               id="more-gender-identity"
+               type= "radio"
+               name ="gender_identity"
+               value="more"
+               onChange= {handleChange}
+               checked={false}
+                />
+                </div>
+
+                <label htmlFor="show-gender">Show gender on my Profile</label>
+                 <input
+               id="show-gender"
+               type= "checkbox"
+               name ="show-gender"
+               onChange= {handleChange}
+               checked={false}
                 />
               </section>
             </form>
