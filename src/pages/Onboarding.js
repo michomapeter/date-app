@@ -99,6 +99,39 @@ const OnBoarding = () => {
                onChange= {handleChange}
                checked={false}
                 />
+                <label>Show Me</label>
+
+                <div className="multiple-input-container">
+                <label htmlFor="man-gender-interest">Man</label>
+                <input
+               id="man-gender-interest"
+               type= "radio"
+               name ="gender_interest"
+               value="man"
+               onChange= {handleChange}
+               checked={false}
+                />
+               <label htmlFor="man-gender-interest">Woman</label>
+                 <input
+               id="woman-gender-interest"
+               type= "radio"
+               name ="gender_interest"
+               value="woman"
+               onChange= {handleChange}
+               checked={false}
+                />
+                <label htmlFor="more-gender-interest">Everyone</label>
+                       <input
+               id="everyone-gender-interest"
+               type= "radio"
+               name ="gender_interest"
+               value="everyone"
+               onChange= {handleChange}
+               checked={false}
+                />
+                </div>
+
+                
               </section>
             </form>
 
