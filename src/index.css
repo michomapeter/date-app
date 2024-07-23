@@ -182,3 +182,7 @@ display: none;
 .onboarding form input[type="submit"]:active{
   background-color: rgb(226,115 ,115);
 }
+
+.onboarding form .photo-container  img{
+  width: 100%;
+}
