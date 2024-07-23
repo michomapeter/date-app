@@ -8,7 +8,7 @@ import MatchesDisplay from '../components/MatchesDisplay';
 const ChatContainer = () =>{
 
     return (
-        <div className="chat-container">
+        <div className="chaty-container">
             <ChatHeader/>
             <div>
                 <button className="option">Matches</button>

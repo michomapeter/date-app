@@ -186,3 +186,51 @@ display: none;
 .onboarding form .photo-container  img{
   width: 100%;
 }
+
+.chaty-container{
+  background-color: rgb(255,255,255 );
+  width: 30%;
+  text-align: left;
+  z-index: 1;
+
+}
+
+.chaty-container .chat-container-header{
+ background: linear-gradient(45deg ,rgb(254,48,114) ,rgb(255,89,64));
+ height: 100px;
+ display:flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.chaty-container .option{
+  border: none;
+  background-color: rgb(255,255,255);
+  border-bottom: solid 4px rgb(243, 33 ,33);
+  font-size: 20px;
+  margin: 2px;
+  padding: 10px;
+}
+
+.chaty-container .option:disabled{
+  border-bottom: solid 4px rgb(187 ,187 ,187);
+}
+
+.chaty-container .profile{
+  padding : 20px;
+  align-items: center;
+  display: flex;
+  color:rgb(255,255,255 );
+}
+
+.img-container {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.img-container img {
+  width: 100%;
+}
