@@ -25,16 +25,21 @@ const OnBoarding = () => {
         console.log('submitted')
     }
     const handleChange=(e) =>{
-        // console.log('e' ,e)
+         console.log('e' ,e)
         const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value
         const name = e.target.name
-        // console.log('value' +value ,'name' + name)
+        console.log('value' +value ,'name' + name)
 
         setFormData((prevState)=>({
           ...prevState,
           [name]: value
         }))
     }
+    //When the user types into the text input or email input, 
+    //or checks/unchecks the checkbox, the handleChange function is triggered.
+    //The function determines the 
+    //new value and updates the corresponding property in the formData state object.
+    //ensuring the state is always upto date with the input values
 
     console.log(formData)
     return (
@@ -113,7 +118,9 @@ const OnBoarding = () => {
                type= "radio"
                name ="gender_identity"
                value="more"
-               onChange= {handleChange}
+               onChange= {handleChange} //onChange event and triggers a callback function when the event occurs
+               //handleChange is the function that will be called  when the change event occurs
+
                checked={formData.gender_identity ==='more'}
                 />
                 <label htmlFor="more-gender-identity">More</label>
